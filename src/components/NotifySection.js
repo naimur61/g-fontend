@@ -1,6 +1,7 @@
 import { Box, Stack, Typography } from "@mui/material";
 import React from "react";
 import lock from "../assets/locked.png";
+import Input from "./InputField";
 
 const NotifySection = () => {
 	return (
@@ -14,7 +15,8 @@ const NotifySection = () => {
 					Get exclusive early access to the finest global job listing. Sign up below and be the first to know
 					when we launch.
 				</Typography>
-				<Box>Notify me</Box>
+
+				<Input />
 
 				<Stack direction="row" alignItems="baseline" spacing=".5rem" justifyContent="center" my="2rem">
 					<Box component="img" src={lock} alt="icon" width="30px" />
