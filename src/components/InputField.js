@@ -2,17 +2,11 @@ import { Box, Button } from "@mui/material";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import React from "react";
-import { ToastContainer, toast } from "react-toastify";
 import Loader from "./Loader";
 
 const Input = () => {
 	const [open, setOpen] = React.useState(false);
-	const {
-		handleSubmit,
-		register,
-
-		reset,
-	} = useForm();
+	const { handleSubmit, register, reset } = useForm();
 
 	const onSubmit = async (data) => {
 		setOpen(true);
@@ -20,14 +14,14 @@ const Input = () => {
 			const response = await axios.post("http://localhost:5000/email", {
 				data,
 			});
+			setOpen(false);
 			if (response.data.result.acknowledged === true) {
-				setOpen(false);
 				alert(response.data.massage);
 			}
 		} catch (error) {
 			alert("Error:", error);
-			setOpen(false);
 		}
+		reset();
 	};
 
 	return (
