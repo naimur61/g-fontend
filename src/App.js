@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import Header from "./components/Header";
 import Cover from "./components/Cover";
 import Footer from "./components/Footer";
+import NotifySection from "./components/NotifySection";
 
 function App() {
 	return (
@@ -14,6 +15,7 @@ function App() {
 		>
 			<Header />
 			<Cover />
+			<NotifySection />
 			<Footer />
 		</Box>
 	);
