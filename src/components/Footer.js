@@ -1,8 +1,23 @@
+import { Box, Stack, Typography } from "@mui/material";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+
 const Footer = () => {
 	return (
-		<div>
-			<h1>footer</h1>
-		</div>
+		<Box mt="2rem" mx="auto" maxWidth="700px" textAlign="center" pt="3rem">
+			<Typography variant="h3" fontWeight="bold">
+				Join our journey
+			</Typography>
+			<Typography variant="h5" fontWeight="bold" my="1rem">
+				Stay in the loop with updates, sneak peeks, and more. Follow our progress.
+			</Typography>
+			<Stack direction="row" justifyContent="center" spacing={2} my="5rem">
+				<FacebookIcon fontSize="large" />
+				<InstagramIcon fontSize="large" />
+				<LinkedInIcon fontSize="large" />
+			</Stack>
+		</Box>
 	);
 };
 
