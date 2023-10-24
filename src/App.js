@@ -7,7 +7,7 @@ function App() {
 	return (
 		<Box
 			sx={{
-				maxWidth: "1200px",
+				maxWidth: "1880px",
 				mx: "auto",
 				px: "1rem",
 			}}

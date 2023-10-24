@@ -27,12 +27,18 @@ const Cover = () => {
 			</Stack>
 
 			{/* Banner  */}
-			<Stack>
+			<Stack
+				direction={{ xs: "column", xl: "row" }}
+				spacing={2}
+				justifyContent="space-between"
+				alignItems="center"
+			>
+				{/* Details  */}
 				<Box>
 					<Typography variant="h3" fontWeight="bold" mt="3rem">
 						Unlock Global Opportunities
 					</Typography>
-					<Typography variant="h4" my="3rem">
+					<Typography variant="h5" my="3rem">
 						Venturing beyond borders? Dive into a curated list of jobs that come with visa an revocation
 						support. Explore, apply, and kickstart your global journey with confidence.
 					</Typography>
@@ -49,7 +55,9 @@ const Cover = () => {
 						</Box>
 					))}
 				</Box>
-				<Box component="img" src={cover} width="100%" />
+
+				{/* Cover Photo  */}
+				<Box component="img" src={cover} width="80%" height="80%" mx="auto" />
 			</Stack>
 		</Box>
 	);
