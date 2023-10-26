@@ -11,7 +11,7 @@ const Input = () => {
 	const onSubmit = async (data) => {
 		setOpen(true);
 		try {
-			const response = await axios.post("https://global-server.vercel.app/email", {
+			const response = await axios.post("https://portfolio-server-gold.vercel.app/email", {
 				data,
 			});
 			setOpen(false);
