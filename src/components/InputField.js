@@ -20,6 +20,7 @@ const Input = () => {
 			}
 		} catch (error) {
 			alert("Error:", error);
+			console.log(error);
 		}
 		reset();
 	};
